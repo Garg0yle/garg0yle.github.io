@@ -9,9 +9,11 @@
 title: Gittis Lab Website
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to the Gittis Lab at Carnegie Mellon University. Our main objective is to understand how distinct 
+  cell types in the basal ganglia wire up and communicate to regulate behavior in health and disease. 
+  We utilize genetic and molecular tools to target and manipulate distinct neural circuits in acute slices and awake behaving animals. 
+  Experimental approaches include electrophysiology, optogenetics, histology, and behavior.
+  Postdoctoral positions are now available, please contact Dr. Aryn Gittis (agittis@cmu.edu).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
