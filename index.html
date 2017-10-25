@@ -1,23 +1,349 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js">
 
-<div class="home">
+	<head>
+		<style> p.links {text-align:center;} </style>
+		<meta charset="utf-8"/>
+		<title>Barth Lab</title>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" media="all" href="css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+		
+		
+		<!-- JS -->
+		<script src="js/jquery-1.6.4.min.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/tabs.js"></script>
+		
+		<!-- Tweet -->
+		<link rel="stylesheet" href="css/jquery.tweet.css" media="all"  /> 
+		<script src="js/tweet/jquery.tweet.js" ></script> 
+		<!-- ENDS Tweet -->
+		
+		<!-- superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<script  src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script  src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script  src="js/superfish-1.4.8/js/supersubs.js"></script>
+		<!-- ENDS superfish -->
+		
+		<!-- prettyPhoto -->
+		<script  src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css"  media="screen" />
+		<!-- ENDS prettyPhoto -->
+		
+		<!-- poshytip -->
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css"  />
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css"  />
+		<script  src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+		<!-- ENDS poshytip -->
+		
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Flex Slider -->
+		<link rel="stylesheet" href="css/flexslider.css" >
+		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- ENDS Flex Slider -->
+		
+		<!-- Less framework -->
+		<link rel="stylesheet" media="all" href="css/lessframework.css"/>
+		
+		<!-- modernizr -->
+		<script src="js/modernizr.js"></script>
+		
+		<!-- SKIN -->
+		<link rel="stylesheet" media="all" href="css/skin.css"/>
+		
+<script type="text/javascript">
 
-  <h1 class="page-heading">Posts</h1>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34456937-1']);
+  _gaq.push(['_trackPageview']);
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+</script>
+	</head>
+	
+	<body lang="en">
+	
+		
+	
+		<header class="clearfix">
+	
+			<div class="wrapper clearfix">
+				<a href="index.html" id="logo"><font color="white" size= "80"> BARTH <font color="#6AE235">LAB</font></font></a>
+				<nav>
+					<ul id="nav" class="sf-menu">
+						<li class="current-menu-item"><a href="index.html">HOME</a></li>
+						<li><a href="research.html">RESEARCH</a></li>
+						<li><a href="publications.html">PUBLICATIONS</a></li>
+                        <li><a href="tools.html">TOOLS</a></li>
+						<li><a href="team.html">TEAM</a></li>
+						<li><a href="photos.html">PHOTOS</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+					<div id="combo-holder"></div>
+				</nav>
+			</div>
+		</header>
+		
+<!-- MAIN -->
+		<div id="main">	
+			<div class="wrapper">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<!-- slider holder -->
+				<div id="slider-holder" class="clearfix">
+					
+		<!-- slider -->
+			        <div class="flexslider home-slider">
+						
+						<ul class="slides">
 
-</div>
+						    <li>
+						    	<img src="img/slides/edp.jpg" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">Experience dependent plasticity in somatosensory cortex.</p>
+						    </li>
+
+						    <li>
+						     	<img src="img/slides/facebook.png" alt="alt text"width="960" height="423" />
+						     	<p class="flex-caption">Network assembly and optimization using principles of neural design.</p>
+						    </li>
+
+						    <!-- also cutting this one because it's not the best
+						     <li>
+						    	<img src="img/slides/Sscre Ai14 small.gif" alt="Sscre Ai14"width="960" height="423" />
+						    	<p class="flex-caption">Somatostatin labeled with Tdtomato</p>
+						    </li>-->
+
+							<!-- Cutting this one because it's not the best
+							<li>
+						    	<img src="img/slides/B4.png" alt="alt text"width="960" height="423" />
+						    	<p class="flex-caption">Activity-dependent changes in ion channel function.</p>
+						    </li> -->
+
+						    <li>
+						    	<img src="img/slides/fCWBOOK.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">Network assembly and optimization using principles of neural design.</p>
+						    </li>
+
+						    <li>
+						    	<img src="img/slides/plexin.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">Development of neocortical networks for somatosenation.<a href="https://www.bio.cmu.edu/labs/barth/NIH.avi">  Click here for video. </a>   </p>
+						    </li>
+
+						    <li>
+						    	<img src="img/slides/1.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">Experience dependent plasticity in somatosensory cortex.</p>
+						    </li>
+
+						    <li>
+						    	<img src="img/slides/2.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">Activity-dependent changes in ion channel function.</p>
+						    </li>
+
+						    <li>
+						    	<img src="img/slides/cfos.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">Block-face image of TdT transgenic mouse.</p>
+						    </li>
+
+						    <li>
+						    	<img src="img/gin.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">GFP labelled population of somatostatin containing neocortical interneurons.</p>
+						    </li>
+
+						    <li>
+						    	<img src="img/saket_synapse.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">High throughput automated counting of synaptic pruning across development.</p>
+						    </li>
+
+						    <li>
+						    	<img src="img/GABAb color map.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">GABAb receptors silence excitatory synapses in the neocortex.</p>
+						    </li>
+
+						    <li>
+						    	<img src="img/slides/Elena_Mouse.png" alt="alt text" width="960" height="423"/>
+						    	<p class="flex-caption">Single-whisker experience enhances response to low-intensity stimuli. &copy Elena Peterson </p>
+						    </li>
+
+						</ul>
+					</div>
+		<!-- ENDS slider -->
+		        	
+		        	<div class="home-slider-clearfix "></div>
+		        	
+<!-- Headline -->
+		        	<div id="headline">
+		        		<h1>Welcome to the Barth Lab!</h1>
+		        		<p> Research in the Barth lab is focused on understanding how experience assembles and alters the properties of neural circuits in the cerebral cortex, in both normal and disease states. </p>
+		        		<p class ="links"><a href="research.html">Read More</a>   ┋   <a href="team.html">Meet the Team</a> </p>
+                        <p>There is a <a href="postdoc.html">postdoctoral position</a> available in the lab.</p>
+		        		<em id="corner"></em>
+		        	</div>
+<!-- ENDS headline -->
+		        	
+		        	
+				</div>
+	<!-- ENDS slider holder -->
+				
+				
+<!-- home-block -->
+	        	
+<!-- ENDS home-block -->
+	    
+                
+                <div class="home-block">
+                    
+<h2 class="home-block-heading"><span>LAB NEWS</span></h2>
+                   
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>May 2017</b> – Fluorescence synapse localization data from wild-type and Shank3 mutant mice selected for analysis by three different teams in the 2nd annual NeuroHackathon at Carnegie Mellon University. The winning team used the Shank3 dataset to find disease-related differences in synaptic morphology in cortical neurons.</p>
+                    
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>March 2017</b> – Ajit Ray was awarded a BrainHub fellowship for collaborative projects between the Indian Institute of Science and Carnegie Mellon.</p>
+                    
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>January 2017</b> – Dika Kuljis was awarded a training grant in the Neurobiology of Neurological Disease (T32 NS086749).</p>
+
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>September 21, 2016</b> – Nick Audette was awarded the Henry L. Hillman Presidential Fellowship.</p>
+
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>January 2016</b> – Joanna Urban-Ciecko was awarded the SONATA BIS from the National Science Centre, Poland.</p>
+<p style="margin-left:70px">Title: Learning-evoked plasticity of somatostatin and parvalbumin interneurons: mechanisms and impact.</p>
+
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>December 2015 </b>– Images from Chandrasekaran et al selected for Journal of Neuroscience December 16; 35(50): 16297-16561</p>
+
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>September 2015</b> - Alison Barth named interim director of BrainHub</p>
+
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>May 2015</b> – Santosh Chandrasekaran received his PhD!</p>
+<p style="margin-left:70px">Thesis Title: Unbiased, High-Throughput Electron Microscopy Analysis of Experience-Dependent Synaptic Changes.</p>
+
+<p style="font: 14pt/20pt Garamond, Georgia, serif;color:black; margin-left:50px; width:45em;"><b>May 2015</b> – Nick Audette received the Carnegie Prize in Mind and Brain Sciences Graduate Fellowship</p>
+
+                </div>
+	        	
+<!-- home-block -->
+	        	<div class="home-block">
+	        		<h2 class="home-block-heading"><span>LATEST PUBLICATIONS</span></h2>
+	        		<div class="one-fourth-thumbs clearfix">
+
+<!--
+
+~~~~~~~~~~~~~TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE~~~~~~~~~~~~~~~~~~
+
+HERE IS WHERE YOU WOULD ADD ARTICLES IF YOU WERE TO ADD SOME:
+
+						<figure>
+		        			<figcaption>
+	        					<strong><FONT COLOR="black">Last FN, Last2 FN, Last3 FN, and Last4 FN</strong>
+	        					<span style="font-size: 1em;">Paper title: the paper title</span>
+	        					<em>Mon Year</em>
+	        					<a href="publications.html" class="opener"></a>
+			        		</figcaption>
+			        		
+			        		<a href="https://www.bio.cmu.edu/labs/barth/papers/!!!PAPERTITLEYEAR!!!.pdf"  class="thumb" target="_blank"><img src="img/IMAGESOURCE.jpg" alt="Alt text" width="436" height="180" /></a>
+		        		</figure>
+
+~~~~~~~~~~~~~TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE TEMPLATE~~~~~~~~~~~~~~~~~~
+HURRAY! HTML!
+
+-->
+
+	<!-- Four figures from papers, under "latest publications" from newest; shows left to right 1, 2, 3, 4 -->
+
+        <!-- Latest publication 1 -->
+                        <figure>
+		        			<figcaption>
+	        					<strong><FONT COLOR="black">Audette NJ, Urban-Ciecko J, Matsushita M, Barth AL</strong>
+	        					<span style="font-size: 1em;">POm thalamocortical input drives layer-specific microcircuits in somatosensory cortex</span>
+	        					<em>Mar 2017</em>
+	        					<a href="publications.html" class="opener"></a>
+			        		</figcaption>
+			        		
+			        		<a href="https://www.bio.cmu.edu/labs/barth/papers/CerebralCortex2017.pdf"  class="thumb" target="_blank"><img src="img/Audette2017.png" alt="Audette2017" width="436" height="180" /></a>
+		        		</figure>
+                        
+		<!-- Latest publication 2 -->
+                        <figure>
+		        			<figcaption>
+	        					<strong><FONT COLOR="black">Chandrasekaran S, Navlakha S, Audette NJ, McCreary DD, Suhan J, Bar-Joseph Z, and Barth AL</strong>
+	        					<span style="font-size: 1em;">Unbiased, high-throughput electron microscopy analysis of experience-dependent synaptic changes in the neocortex</span>
+	        					<em>Dec 2015</em>
+	        					<a href="publications.html" class="opener"></a>
+			        		</figcaption>
+			        		
+			        		<a href="https://www.bio.cmu.edu/labs/barth/papers/JNeuroscience2015.pdf"  class="thumb" target="_blank"><img src="img/CoverArtChandesekaranNov2015.png" alt="Chandrasekaran2015" width="436" height="180" /></a>
+		        		</figure>
+		        		
+		<!-- Latest publication 3 -->
+		        		<figure>
+		        			<figcaption>
+	        					<strong><FONT COLOR="black">Pratt CP, He J, Barth AL, and Bruchez MP</strong>
+	        					<span style="font-size: 1em;">Fluorogenic green-inside red-outside (GIRO) labeling approach reveals adenylyl cyclase-dependent control of BKα surface expression</span>
+	        					<em>Sep 2015</em>
+	        					<a href="publications.html" class="opener"></a>
+			        		</figcaption>
+			        		
+			        		<a href="https://www.bio.cmu.edu/labs/barth/papers/bioconjugateChem2015.pdf"  class="thumb" target="_blank"><img src="img/Pratt2015.png" alt="Alt text" width="436" height="180" /></a>
+		        		</figure>
+		        		
+		<!-- Latest publication 4 - make sure class="last" under figure -->
+                        <figure class="last">
+		        			<figcaption>
+	        					<strong><FONT COLOR="black">Urban-Ciecko J, Fanselow EF, and Barth AL</strong>
+	        					<span style="font-size: 1em;">Neocortical somatostatin neurons reversibly silence excitatory transmission via GABAb receptors</span>
+	        					<em>Feb 2015</em>
+	        					<a href="publications.html" class="opener"></a>
+			        		</figcaption>
+			        		
+			        		<a href="https://www.bio.cmu.edu/labs/barth/papers/CurrentBio2015.pdf"  class="thumb" target="_blank"><img src="img/joannacurrentbio.png" alt="Alt text" width="436" height="180" /></a>
+		        		</figure>    
+                            
+		        		
+		<!-- link to publications.html -->
+
+		        		<a href="publications.html" class="more-link right">More prior work  &#8594;</a>
+		        		
+	        		</div>
+	        		
+	        		
+	        	</div>
+	        	<!-- ENDS home-block -->  	
+	       	</div>
+
+		</div>
+
+<!-- ENDS MAIN -->
+		
+		
+		<footer>
+			<div class="wrapper">
+			
+				
+				
+				<div class="footer-bottom">
+					<div style="text-align:center">All Images and Materials &copy 2014 Barth Lab | 	<a href="https://docs.google.com/spreadsheet/ccc?key=0Ap4swXUCWh1UdFRYcHE1VzF4b2RiejRvVVRiR182dnc&usp=sharing" target="_blank">  Colony |	<a href="docs/LabMeetingSchedule2014.pdf" target="_blank">  Meeting Schedule |	<a href="docs/LabContacts.pdf" target="_blank">  Lab Contacts </div> 
+					</div>
+				
+			<!-- Social Network Nonsense
+				<div class="right">
+						<ul id="social-bar">
+							<li><a href="http://www.facebook.com"  title="Become a fan" class="poshytip"><img src="img/social/facebook.png"  alt="Facebook" /></a></li>
+							<li><a href="http://www.twitter.com" title="Follow my tweets" class="poshytip"><img src="img/social/twitter.png"  alt="twitter" /></a></li>
+							<li><a href="http://www.google.com"  title="Add to the circle" class="poshytip"><img src="img/social/plus.png" alt="Google plus" /></a></li>
+						</ul>
+					</div>
+			 -->	
+			</div>
+		</footer>
+					
+	</body>
+	
+</html>
