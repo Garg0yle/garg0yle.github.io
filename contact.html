@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8"/>
+		<style> p.links {text-align:center;} </style>
+		<title>Contact</title>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" media="all" href="css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+		
+		
+		<!-- JS -->
+		<script src="js/jquery-1.6.4.min.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/tabs.js"></script>
+		
+		<!-- Tweet -->
+		<link rel="stylesheet" href="css/jquery.tweet.css" media="all"  /> 
+		<script src="js/tweet/jquery.tweet.js" ></script> 
+		<!-- ENDS Tweet -->
+		
+		<!-- superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<script  src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script  src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script  src="js/superfish-1.4.8/js/supersubs.js"></script>
+		<!-- ENDS superfish -->
+		
+		<!-- prettyPhoto -->
+		<script  src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css"  media="screen" />
+		<!-- ENDS prettyPhoto -->
+		
+		<!-- poshytip -->
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-twitter/tip-twitter.css"  />
+		<link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css"  />
+		<script  src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+		<!-- ENDS poshytip -->
+		
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Flex Slider -->
+		<link rel="stylesheet" href="css/flexslider.css" >
+		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- ENDS Flex Slider -->
+		
+		<!-- Less framework -->
+		<link rel="stylesheet" media="all" href="css/lessframework.css"/>
+		
+		<!-- modernizr -->
+		<script src="js/modernizr.js"></script>
+		
+		<!-- SKIN -->
+		<link rel="stylesheet" media="all" href="css/skin.css"/>
+		
+		<!-- reply move form -->
+		<script src="js/moveform.js"></script>
+		
+
+	</head>
+	
+	<body lang="en">
+	
+		<header class="clearfix">
+		
+			<!-- top widget -->
+			
+			<!-- ENDS top-widget -->
+
+
+
+	
+			<div class="wrapper clearfix">
+				<a href="index.html" id="logo"><font color="white" size= "80">GITTIS <font color="#6AE235"> LAB</font></font></a>
+				<nav>
+					<ul id="nav" class="sf-menu">
+						<li ><a href="index.html">HOME</a></li>
+            <li><a href="lab-members.html">LAB MEMBERS</a></li>
+						<li><a href="research.html">RESEARCH</a></li>
+						<li><a href="publications.html">PUBLICATIONS</a></li>
+						<li class="current-menu-item"><a href="contact.html">CONTACT</a></li>
+					</ul>
+					<div id="combo-holder"></div>
+				</nav>
+			</div>
+		</header>
+		
+		
+		
+		<!-- MAIN -->
+		<div id="main">	
+			<div class="wrapper clearfix">
+			
+				
+				<h2 class="page-heading"><span>CONTACT</span></h2>	
+	        	
+				<!-- page content -->
+	        	<div id="page-content" class="clearfix">
+					
+				<!-- Map -->
+				<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8U_NlO_c0YZ8jsgu9CLVQKne52-9Y7gs&sensor=true" /></script>
+				<script type="text/javascript">
+					function initialize() {
+						var latlng = new google.maps.LatLng(40.445919, -79.95067);
+						var myOptions = {
+						  zoom: 18,
+						  center: latlng,
+						  mapTypeId: google.maps.MapTypeId.HYBRID
+						};
+						var map = new google.maps.Map(document.getElementById("map_canvas"),
+					   		myOptions);
+						var marker = new google.maps.Marker({
+ 							position: latlng, 
+  							map: map,
+						});
+						
+					}
+				</script>
+				
+				<div id="map_canvas"></div>
+				<!-- ENDS Map -->
+					<div style="text-align:center" class="map-content">
+						The Gittis Lab is located in the 1st floor of the Mellon Institute. <a href="http://www.cmu.edu/homeimages/campus-map/CMU_MapColor_11x17.pdf" id="logo" target="_blank">Campus Map</a>
+					</div>
+
+					
+					<!-- form -->
+					<script type="text/javascript" src="js/form-validation.js"></script>
+					<form id="contactForm" action="#" method="post">
+						<h2 class="heading"></h2>
+						
+						<fieldset>
+							<div>
+								<input name="name"  id="name" type="text" class="form-poshytip" title="Enter your name" />
+								<label>Name</label>
+							</div>
+							<div>
+								<input name="email"  id="email" type="text" class="form-poshytip" title="Enter your email address" />
+								<label>Email</label>
+							</div>
+							
+							<div>
+								<textarea  name="comments"  id="comments" rows="5" cols="20" class="form-poshytip" title="Enter your comments"></textarea>
+							</div>
+							
+							<!-- send mail configuration -->
+							<input type="hidden" value="agittis@andrew.cmu.edu" name="to" id="to" />
+							<input type="hidden" value="Enter the subject here" name="subject" id="subject" />
+							<input type="hidden" value="send-mail.php" name="sendMailUrl" id="sendMailUrl" />
+							<!-- ENDS send mail configuration -->
+							
+							<p><input type="button" value="Send" name="submit" id="submit" /> <span id="error" class="warning">Message</span></p>
+						</fieldset>
+						
+					</form>
+					<p id="sent-form-msg" class="success">Email Sent.</p>
+					<!-- ENDS form -->
+					
+					
+					<!-- contact sidebar -->
+		        	<aside id="contact-sidebar">
+		        		<div class="block">
+			        		<h4>Address</h4>
+			        		
+			        		<ul class="address-block">
+			        			<li class="address">173 Mellon Institute <br> Dept. of Biological Sciences <br>Carnegie Mellon University<br>4400 Fifth Avenue <br> Pittsburgh, PA 15213 </li>
+			        			<li class="phone">412-268-7229</li>
+			        			<li class="email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01LAm4-iJruakU43A1ve5Oaw==&amp;c=dLwbsQA-hJ-SBfcvQqMFjw==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501LAm4-iJruakU43A1ve5Oaw\75\75\46c\75dLwbsQA-hJ-SBfcvQqMFjw\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address" style="color: gray";>Email Address</a></li>
+			        		</ul>
+			        		
+		        		</div><br>
+
+		        		//<h4>Tweets by @AlisonBarth</h4>
+
+		        	<!-- Alison's twitter -->	
+					<a class="twitter-timeline"
+					 	width="300"
+  						height="300"
+  						data-chrome="noheader"
+						href="https://twitter.com/AlisonBarth"
+						data-widget-id="560154051003047936">
+<!-- 						Tweets by @AlisonBarth -->
+					</a> 
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
+
+		        	</aside>
+		        	<div class="clearfix"></div>//
+					<!-- ENDS contact-sidebar -->
+					
+				</div>	        	
+	        	<!--  page content-->
+	        	<div  style="text-align:center">
+	        	<p class="links"> Questions or Comments About the Site? Contact the <a href="http://www.google.com/recaptcha/mailhide/d?k=01gdr8ftKTyhrYrxyg-MqXLQ==&amp;c=ZVAFJ5OMPzXLKsa29A7gRNAbcpnirmb_tTZe0Ec4EsY=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501gdr8ftKTyhrYrxyg-MqXLQ\75\75\46c\75ZVAFJ5OMPzXLKsa29A7gRNAbcpnirmb_tTZe0Ec4EsY\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">Webmaster.</a>
+	        	</div>
+	        	
+			</div>
+		</div>
+		<!-- ENDS MAIN -->
+		
+		
+	
+		<footer>
+			<div class="wrapper">
+			
+				
+				
+				<div class="footer-bottom">
+					<div style="text-align:center">All Images and Materials &copy 2014 Barth Lab 	</div>
+					</div>
+				
+			<!-- Social Network Nonsense
+				<div class="right">
+						<ul id="social-bar">
+							<li><a href="http://www.facebook.com"  title="Become a fan" class="poshytip"><img src="img/social/facebook.png"  alt="Facebook" /></a></li>
+							<li><a href="http://www.twitter.com" title="Follow my tweets" class="poshytip"><img src="img/social/twitter.png"  alt="twitter" /></a></li>
+							<li><a href="http://www.google.com"  title="Add to the circle" class="poshytip"><img src="img/social/plus.png" alt="Google plus" /></a></li>
+						</ul>
+					</div>
+			 -->	
+			</div>
+		</footer>
+		<!-- Start google map -->
+		<script>initialize();</script>	
+	</body>
+	
+</html>
