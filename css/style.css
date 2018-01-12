@@ -30,7 +30,7 @@ footer, header, nav, section, audio, video {
 }
 
 body{
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Palatino, Arial, sans-serif;
 	font-size: 13px;
 }
 
@@ -60,7 +60,7 @@ body a{
 #logo:hover{ opacity: 0.2;}
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+	font-family: Palatino, Arial, sans-serif;
 	font-weight: 400;
 }
 
@@ -204,7 +204,7 @@ nav a{
 }
 
 #nav>li>a{
-	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+	font-family: Palatino, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	display: block;
@@ -745,7 +745,7 @@ nav a{
 	width: 97px;
 	height: 97px;
 	background: url(../img/date.png) no-repeat;
-	font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+	font-family: Palatino, Arial, sans-serif;
 }
 
 #posts-list .entry-date .number{
