@@ -95,14 +95,14 @@ nav a{ color: #E2E0D7; }
 /* HOME ------------------------------------------------------------*/
 
 .home-block figcaption{
-	background: #b00;
-	color: #787878;
+	background: #323299;
+	color: #f1f1f1;
 }
 
 /* PORTFOLIO ------------------------------------------------------------*/
 
 .portfolio-thumbs figcaption{
-	background: #b00;
+	background: #323299;
 	color: #f1f1f1;
 }
 
